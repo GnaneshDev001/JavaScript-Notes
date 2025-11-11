@@ -6,10 +6,11 @@ for(let ename of enames){
 console.log(uppercase);
 //for each
 let ename=["gnana",'chandu',"madhu","arjun"]
-let enam=ename.forEach((enam)=>{
-    console.log(enam);
-//let enam=ename.forEach((enam)=>{enam.toUpperCase();
+// let enam=ename.forEach((enam)=>{
+//     console.log(enam);
+let enam=ename.forEach((enam)=>{enam.toUpperCase();
 })
+console.log(enam);
 let ena=ename.forEach((enames)=>{return enames.toUpperCase()})
 console.log(ena);//undefined
 //map()
