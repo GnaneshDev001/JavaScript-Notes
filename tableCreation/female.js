@@ -1,0 +1,162 @@
+let female=[{"uid":1,"name":"Lily","gender":"Female"},
+{"uid":2,"name":"Perceval","gender":"Male"},
+{"uid":3,"name":"Heddi","gender":"Female"},
+{"uid":4,"name":"Corella","gender":"Female"},
+{"uid":5,"name":"Mylo","gender":"Male"},
+{"uid":6,"name":"Melli","gender":"Female"},
+{"uid":7,"name":"Lockwood","gender":"Male"},
+{"uid":8,"name":"Jourdan","gender":"Female"},
+{"uid":9,"name":"Sophie","gender":"Bigender"},
+{"uid":10,"name":"Bealle","gender":"Male"},
+{"uid":11,"name":"Kristofer","gender":"Male"},
+{"uid":12,"name":"Kissiah","gender":"Female"},
+{"uid":13,"name":"Eb","gender":"Male"},
+{"uid":14,"name":"Ainslie","gender":"Bigender"},
+{"uid":15,"name":"Layne","gender":"Female"},
+{"uid":16,"name":"Alison","gender":"Female"},
+{"uid":17,"name":"Cathrine","gender":"Female"},
+{"uid":18,"name":"Kerwinn","gender":"Male"},
+{"uid":19,"name":"Bay","gender":"Male"},
+{"uid":20,"name":"Jedd","gender":"Male"},
+{"uid":21,"name":"Ester","gender":"Female"},
+{"uid":22,"name":"Tripp","gender":"Male"},
+{"uid":23,"name":"Florinda","gender":"Female"},
+{"uid":24,"name":"Michell","gender":"Female"},
+{"uid":25,"name":"Mickie","gender":"Bigender"},
+{"uid":26,"name":"Nady","gender":"Female"},
+{"uid":27,"name":"Kinsley","gender":"Male"},
+{"uid":28,"name":"Loutitia","gender":"Female"},
+{"uid":29,"name":"Zerk","gender":"Male"},
+{"uid":30,"name":"Augustin","gender":"Bigender"},
+{"uid":31,"name":"Oswald","gender":"Male"},
+{"uid":32,"name":"Jacquelynn","gender":"Female"},
+{"uid":33,"name":"Brigitta","gender":"Female"},
+{"uid":34,"name":"Emery","gender":"Male"},
+{"uid":35,"name":"Dolley","gender":"Female"},
+{"uid":36,"name":"Chiquia","gender":"BiGender"},
+{"uid":37,"name":"Marcellus","gender":"Male"},
+{"uid":38,"name":"Darbie","gender":"Bigender"},
+{"uid":39,"name":"Eyde","gender":"Bigender"},
+{"uid":40,"name":"Livvyy","gender":"Female"},
+{"uid":41,"name":"Anjela","gender":"Female"},
+{"uid":42,"name":"Cornie","gender":"Male"},
+{"uid":43,"name":"Loise","gender":"Female"},
+{"uid":44,"name":"Reba","gender":"Female"},
+{"uid":45,"name":"Mersey","gender":"Female"},
+{"uid":46,"name":"Jacinda","gender":"Female"},
+{"uid":47,"name":"Dyana","gender":"Female"},
+{"uid":48,"name":"Luce","gender":"Male"},
+{"uid":49,"name":"Benita","gender":"Female"},
+{"uid":50,"name":"Kristofor","gender":"Male"},
+{"uid":51,"name":"Elka","gender":"Female"},
+{"uid":52,"name":"Gearalt","gender":"Male"},
+{"uid":53,"name":"Cosme","gender":"Male"},
+{"uid":54,"name":"Cyndi","gender":"Female"},
+{"uid":55,"name":"Augustine","gender":"Male"},
+{"uid":56,"name":"Druci","gender":"Female"},
+{"uid":57,"name":"Marietta","gender":"Male"},
+{"uid":58,"name":"Charo","gender":"Female"},
+{"uid":59,"name":"Fabian","gender":"Male"},
+{"uid":60,"name":"Stinky","gender":"Male"},
+{"uid":61,"name":"Nady","gender":"Female"},
+{"uid":62,"name":"Nicola","gender":"Male"},
+{"uid":63,"name":"Thaxter","gender":"Male"},
+{"uid":64,"name":"Claus","gender":"Male"},
+{"uid":65,"name":"Rick","gender":"Male"},
+{"uid":66,"name":"Reinaldos","gender":"Male"},
+{"uid":67,"name":"Hillel","gender":"Male"},
+{"uid":68,"name":"Gardener","gender":"Male"},
+{"uid":69,"name":"Launce","gender":"Bigender"},
+{"uid":70,"name":"Nanice","gender":"Female"},
+{"uid":71,"name":"Aurel","gender":"Female"},
+{"uid":72,"name":"Hercule","gender":"Bigender"},
+{"uid":73,"name":"Royal","gender":"Male"},
+{"uid":74,"name":"Sibeal","gender":"Female"},
+{"uid":75,"name":"Christin","gender":"Female"},
+{"uid":76,"name":"Miguela","gender":"Female"},
+{"uid":77,"name":"Pauline","gender":"Female"},
+{"uid":78,"name":"Morley","gender":"Male"},
+{"uid":79,"name":"Jeni","gender":"Female"},
+{"uid":80,"name":"Darb","gender":"Female"},
+{"uid":81,"name":"Estrella","gender":"Female"},
+{"uid":82,"name":"Elsinore","gender":"Female"},
+{"uid":83,"name":"Amandy","gender":"Female"},
+{"uid":84,"name":"Audrie","gender":"Female"},
+{"uid":85,"name":"Hamish","gender":"Male"},
+{"uid":86,"name":"Maximo","gender":"Male"},
+{"uid":87,"name":"Alf","gender":"Male"},
+{"uid":88,"name":"Libbie","gender":"Female"},
+{"uid":89,"name":"Tadeas","gender":"Male"},
+{"uid":90,"name":"Trey","gender":"Male"},
+{"uid":91,"name":"Rhianna","gender":"Bigender"},
+{"uid":92,"name":"Susann","gender":"Female"},
+{"uid":93,"name":"Sandra","gender":"Female"},
+{"uid":94,"name":"Florentia","gender":"Female"},
+{"uid":95,"name":"Averyl","gender":"Female"},
+{"uid":96,"name":"Harmon","gender":"Male"},
+{"uid":97,"name":"Ryun","gender":"Male"},
+{"uid":98,"name":"Jocelyn","gender":"Bigender"},
+{"uid":99,"name":"Karisa","gender":"Female"},
+{"uid":100,"name":"Bendite","gender":"Female"}]
+
+function data(){
+    let malerows="";
+    let femalerows="";
+    let bigenderrows="";
+    for(let fem of female){
+        if(fem.gender==="Male"){
+            malerows+=`<tr>
+            <td>${fem.uid}</td>
+            <td>${fem.name}</td>
+            <td>${fem.gender}</td>
+            </tr>`
+        }else if(fem.gender==="Female"){
+           femalerows+=`<tr>
+            <td>${fem.uid}</td>
+            <td>${fem.name}</td>
+            <td>${fem.gender}</td>
+            </tr>`
+
+        }else{
+            bigenderrows+=`<tr>
+            <td>${fem.uid}</td>
+            <td>${fem.name}</td>
+            <td>${fem.gender}</td>
+            </tr>`
+        }
+       
+    }
+    document.getElementById("body").innerHTML=malerows
+    document.getElementById("body2").innerHTML=femalerows
+    document.getElementById("body3").innerHTML=bigenderrows
+
+}
+
+// function data1(){
+//     let rows="";
+//     for(let fem of female){
+//         if(fem.gender==="Female"){
+//             rows=rows+`<tr>
+//             <td>${fem.uid}</td>
+//             <td>${fem.name}</td>
+//             <td>${fem.gender}</td>
+//             </tr>`
+//         }
+//     }
+//     document.getElementById("body2").innerHTML=rows
+// }
+
+// function data2(){
+//     let rows="";
+//     for(let fem of female){
+//         if(fem.gender==="Bigender"){
+//             rows=rows+`<tr>
+//             <td>${fem.uid}</td>
+//             <td>${fem.name}</td>
+//             <td>${fem.gender}</td>
+//             </tr>`
+//     }
+// }
+
+// document.getElementById("body3").innerHTML=rows
+// }

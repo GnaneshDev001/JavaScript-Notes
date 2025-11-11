@@ -1,0 +1,221 @@
+data types 
+-------------------
+primitive data types -7
+----------------------
+number
+string
+boolean
+undefined
+null
+bigint
+Symbol
+
+bigint in javascript representation--var n=122345678910n;
+
+non-primitive data types -1
+-----------------------------
+ array []
+--------------------------
+js-array= group of elements as one entity.
+elements are store in heap memory based on index numbers start with 0.
+allowed heterogeneous&duplicates. [21,21.5,'gnana',true].
+Negative indexing is not possible.
+Array is a iterable object.
+order maintain(insertion order).
+
+create
+-------------------
+var eids=[101,102,103]
+var a=[10,20,101,10]
+var b=[21,21.5,'gnana',true]
+let enames=['rahul','sonia','priyanka','modi']
+--------------------
+Read
+-------------------------
+console.log(eids);
+console.log(a);
+console.log(b);
+
+how to read array elements?
+ using indexing.
+ clg(ename[0])// rahul
+ clg(ename[1])// sonia
+ clg(ename[2])// priyanka
+ clg(ename[3])// modi
+ clg(ename[4])// undefined  index is not there then its is undefined.
+ clg(ename[5])// undefined
+ ----------------------------
+ update
+ ---------------------
+ enames[0]='rahul gandhi'
+ console.log(enames);
+ 
+ delete
+ ------------------------
+delete enames[0]
+console.log(enames)
+
+javascript-object {}
+-----------------------------                                    [] js array object
+                                                                  {} js object
+how to represent maped valus in js?
+using object {}
+  object=group of key:value pairs as one entity.{'eid':11;'ename':'sonia'}
+ duplicate keys are not allowed.
+ indexing concept is not allowed.
+ object is not iterable. they follow (for-in).
+ 
+ create
+ ---------------------
+ let emp={"eid':101,
+          "ename":'rahul',
+		  "esal":56000}
+		  
+read----------------
+console.log(emp)
+
+ how to read js objects-values? using object properties.
+ //console.log(object.property)//
+ console.log(emp.eid)
+ console.log(emp.ename)
+ console.log(emp.esal)
+ 
+ update
+ -------------------
+ emp.esal=430000;
+ clg(emp);
+ 
+ if property is not there then it going to be add.
+ emp.gender="male";
+ clg(emp);
+ ------------------------------------------------------------------------
+ OPERATORS:
+ ------------------------------------------------------------------------
+ let employees=[
+    {id:1, name:"gnana",salary:43000},
+    {id:2, name:"mahi",salary:44000},
+    {id:3, name:"pa1",salary:42000},
+    {id:5, name:"sohi",salary:48000},
+]
+console.log(employees[0].id);
+console.log(employees[2].name);
+console.log(employees[3].salary);
+ 
+  iterating is easy using for of loop--
+  
+  for(let emp of employees){
+       console.log(emp.name)
+	   }
+ java-----
+ strictly typed:-use semicolon after statement,static typed:-we can't change the type once declared.2
+ 
+ js events:
+ -------------------------------------------------------
+ event handler=display()
+ event=onclick,onmouseover,ondblclick etc
+ 
+ how to get document object? dom= document object manipulation.
+ 1.document.getElementById()
+ 1.document.getElementByTag()
+ 1.document.getElementByClassName()
+ 1.document.querySelector()
+ ---------------------------------------------------------------------
+  string literal:${} to read  the variable in the form of String    
+  ----------------------------------------------------------------
+  05/11/2025
+  
+  fatarrrow function:
+  let a=100;
+  let add=()>>{
+               console.log(addition) 
+			   }
+			   add()
+console.log(typeof a)
+advantages of using fatarrrow function:
+---------------------------------------
+1.concise/shorter code.
+2.implicit return.(without return
+3.function overridind conflicts/resolved.
+4.to resolve the undefined error using fat arrow function
+
+to refer a object in class we use "THIS" keyword.
+THIS is a keyword in class we use "THIS" keyword.
+THIS is a pointer,pointing to current object.
+----------------------------------------------------------
+06/11/2025
+set timout is js inbuilt function                               =passing function,inetrval
+execute provided function after time interval
+
+postman:
+usage: fetch all users
+Rest API URL:https://jsonplaceholder.typicode.com/users
+Method Type:GET
+Required Fields:None 
+Access Type
+--------------------------------------------------------
+07/11/2025
+ js=array[]
+group of elements,values,objects as one entity.
+duplicates are allowed
+allowed heterogeneous elements.
+starting based indexing 
+oreder mainted
+iterable object.---for,while,do-while,for of.
+-------------------------------------------------
+js=object{}
+group of key value pairs as one entity.
+duplicate keys are not allowed.
+heterogeneous elements are allowed.
+indexing not applicable.
+no order guaranetee.
+not iterable---for in
+================================================
+Array[]methods:
+let eids=[101,102,103,104}
+eids.push(105)== append one or more elements at end of an array.
+eids.pop()== remove last element from array.
+eids.unshif()== add element at beggining of an array.
+eids.shift()==remove first element from array.
+eids.reverse()==// reverse  th entire array elements
+
+es6 methods:	
+=========================
+[]for each(()=>{})
+[]filter(()=>{})
+[]reduce(()=>{})
+[]map(()=>{})
+[]find (()=>{})
+[]find index(()=>{})
+--------------------------------------------------------------
+10/11/25
+------------------------------------------------------------
+ECMA= providing standard to  scripting languages(java script.)
+ecma shortform es=Ecma Script.
+cuurent version is es14.
+major changes happening in es6.
+Es6 faeatures==============
+1.let,const
+2.class
+3.${}=to read to the variable in the form string.
+4.()=>{} fat arrow
+
+your url contains domain name, path parameters,qu0ry parameters.
+for constructing url we are using string literals.
+5... operator acting as spread operator and rest operator.
+spread operator applicable for arrays and object{}=== 1.to create new array 2. Merge arrays 3. Extending array elements.
+4.Create new object 5.merge object 6.extend the object.
+ex:
+let a=[101,102,103,104]
+let b=[...a]
+for without spread operator we use iterating usin for of.
+New keywords are coming = import/export.
+6.Destructuring.
+7.Asynchronous programming.	
+==> how to achieve asynchronous programming.
+using callback
+Promise
+async & await
+8.SEt=how to remove duplicates from array==> 
+9.closure.
+==========================
+11/11/2025
