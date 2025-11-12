@@ -218,4 +218,16 @@ async & await
 8.SEt=how to remove duplicates from array==> 
 9.closure.
 ==========================
-11/11/2025
+12/11/2025
+====================
+import/export are two types
+1.default:
+if you want export/import single value.
+export default tax;
+import tax from central.js
+2.named:
+ifyou want to export/import multiple values.
+export{tax,login}
+import {tax,login} from central.js
+
+in default mode aliasing names is possible.
