@@ -215,7 +215,7 @@ New keywords are coming = import/export.
 using callback
 Promise
 async & await
-8.SEt=how to remove duplicates from array==> 
+8.SET=how to remove duplicates from array==> 
 9.closure.
 ==========================
 12/11/2025
@@ -230,4 +230,23 @@ ifyou want to export/import multiple values.
 export{tax,login}
 import {tax,login} from central.js
 
-in default mode aliasing names is possible.
+in default mode aliasing names is possible
+=========================================
+13/11/25
+------------------
+Es-5 module:
+product.js
+-------
+module.exports=pname;
+module.exports={pname,product}
+---------
+cart.js
+--------------
+let pname=require(./product)==default import.
+let {pname,Product}=require(./product)
+object creation= new product();
+clg(pname)
+-------------------------------
+synchronous= executing one request at a time and blocks all other.
+Asynchronous: executing multiple requests at a time. non blocking.
+callback= at the time invoking passing function as a argument.
