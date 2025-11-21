@@ -243,10 +243,33 @@ module.exports={pname,product}
 cart.js
 --------------
 let pname=require(./product)==default import.
-let {pname,Product}=require(./product)
+let {pname,Product}=require(./product)8 
 object creation= new product();
 clg(pname)
 -------------------------------
 synchronous= executing one request at a time and blocks all other.
 Asynchronous: executing multiple requests at a time. non blocking.
-callback= at the time invoking passing function as a argument.
+callback= at the time invoking  passing function as a argument.
+=======================================
+14/11/2025
+async programming can be achieved through callback,Promise,Async&Await.
+Await= manually i want to execute the request which we required.
+we can't use await keyword directly
+=====================================
+20\11\25
+====================================
+fetch:
+in built function
+to invoke restapi
+return promise object
+fetch()
+.then()
+.catch()
+or
+fetch()=>async&await
+  TOON==token oriented object notation
+ JSON===javascriptobject notation
+ ===================================
+ destructuring:
+ to improve the code readability.
+
